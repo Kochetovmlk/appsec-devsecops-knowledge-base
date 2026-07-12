@@ -7,3 +7,5 @@ SQL Injection — это веб-уязвимость, связанная с из
 ## 🇬🇧 What is SQL Injection
 
 SQL Injection is a vulnerability that allows manipulation of SQL queries.
+
+![Burp Request](Lesson_1.png)

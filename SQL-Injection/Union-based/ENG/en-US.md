@@ -86,3 +86,8 @@ UNION
 SELECT c, d FROM table2;
 ```
 
+More detailed information can be found on the PortSwigger Web Security Academy website in the **UNION attacks** section.
+
+## References
+
+- [PortSwigger Web Security Academy — SQL Injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks)

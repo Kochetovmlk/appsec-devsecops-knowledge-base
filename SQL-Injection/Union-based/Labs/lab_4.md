@@ -14,3 +14,4 @@
 '+UNION+SELECT+NULL,username||'~'||password+FROM+users--
 ```
 
+![PortSwigger](../Drawing/Drawing_10.png)

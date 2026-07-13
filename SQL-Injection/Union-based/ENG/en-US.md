@@ -23,7 +23,7 @@ The diagram below serves as our guide. It clearly separates SQL Injection attack
 
 This classification is essential because it defines not only the complexity of the attack but also the appropriate defense strategy.
 
-
+![PortSwigger](../Drawing/Drawing_3.png)
 
 ## Detecting SQL Injection Vulnerabilities
 

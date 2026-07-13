@@ -52,7 +52,7 @@ UNION SELECT NULL,NULL,'test'--
 
 ![PortSwigger](../Drawing/Drawing_5.png)
 
-Видим вывод '''test''' ✅
+Видим вывод ```test``` ✅
 
 Пример запроса при котором у нас нет ответа:
 

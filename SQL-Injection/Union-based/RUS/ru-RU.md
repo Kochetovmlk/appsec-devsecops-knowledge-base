@@ -91,4 +91,4 @@ SELECT c, d FROM table2;
 
 ## Ссылка
 
-- [PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки](https://portswigger.net/web-security/sql-injection/union-attacks?utm_source=chatgpt.com)
+- [PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки](https://portswigger.net/web-security/sql-injection/union-attacks?)

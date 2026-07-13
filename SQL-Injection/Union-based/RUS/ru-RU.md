@@ -92,3 +92,10 @@ SELECT c, d FROM table2;
 ## Ссылка
 
 - [PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки](https://portswigger.net/web-security/sql-injection/union-attacks?)
+
+
+## Практические лабораторные работы
+
+Далее перейдём к разбору практических лабораторных работ, где будем применять полученные знания на практике и анализировать реальные сценарии эксплуатации UNION-BASED SQL Injection.
+
+Все лабораторные работы находятся в отдельной директории **Labs**.

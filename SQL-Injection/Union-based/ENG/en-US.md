@@ -38,3 +38,18 @@ Main detection methods:
 - **OAST (Out-of-Band)** — external interactions such as DNS/HTTP requests can confirm vulnerabilities without visible output.
 
 Burp Suite Scanner can also be used to automatically detect common SQL Injection vulnerabilities.
+
+
+## SQL Injection in Different Parts of a Query
+
+SQL Injection vulnerabilities are not limited to the `WHERE` clause of a `SELECT` statement. Any part of an SQL query that uses untrusted user input without proper validation can become an attack point.
+
+Common locations where SQL Injection can occur:
+
+- **SELECT + WHERE** — the most common case, where user input affects query conditions.
+- **UPDATE** — vulnerabilities may exist in updated values or inside the `WHERE` clause.
+- **INSERT** — attacks can occur through data being inserted into the database.
+- **SELECT (table and column names)** — user input may affect the structure of the query.
+- **ORDER BY** — vulnerabilities can appear when controlling result sorting.
+
+Remember: SQL Injection is not related to a specific SQL statement type, but rather to improper handling of user-controlled input.

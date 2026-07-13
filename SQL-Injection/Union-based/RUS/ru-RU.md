@@ -83,3 +83,9 @@ UNION-based SQL Injection — это метод эксплуатации SQL-и�
 SELECT a, b FROM table1 
 UNION 
 SELECT c, d FROM table2;
+
+Более подробно описано на сайте Portswigger.net
+
+## References
+
+- PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки

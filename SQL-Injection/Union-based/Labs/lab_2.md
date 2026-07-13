@@ -46,3 +46,16 @@ UNION SELECT NULL,NULL,'test'--
 
 Если значение test появляется в ответе приложения, значит данный столбец совместим со строковым типом данных.
 
+```sql
+' +UNION+SELECT+NULL,'test',NULL--
+```
+
+![PortSwigger](../Drawing/Drawing_5.png)
+
+Пример запроса при котором у нас нет ответа:
+
+```sql
+' +UNION+SELECT+'test',NULL,NULL--
+```
+
+![PortSwigger](../Drawing/Drawing_6.png)

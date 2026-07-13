@@ -91,3 +91,9 @@ More detailed information can be found on the PortSwigger Web Security Academy w
 ## References
 
 - [PortSwigger Web Security Academy — SQL Injection UNION attacks](https://portswigger.net/web-security/sql-injection/union-attacks)
+
+## Practical Labs
+
+Next, we will move on to practical laboratory exercises, where we will apply the learned concepts and analyze real-world SQL Injection exploitation scenarios.
+
+All laboratory exercises can be found in the dedicated **Labs** directory.

@@ -85,8 +85,8 @@ UNION
 SELECT c, d FROM table2;
 ```
 
-Более подробно описано на сайте Portswigger.net
+Более подробно можно ознакомиться на сайте Portswigger.net в разделе UNION attacks
 
-## References
+## Ссылка
 
 - [PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки](https://portswigger.net/web-security/sql-injection/union-attacks?utm_source=chatgpt.com)

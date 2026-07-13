@@ -11,3 +11,8 @@ SQL Injection (SQLi) is a web security vulnerability that allows an attacker to 
 ![Burp Request](Chemaattack.png)
 
 ![Burp Request](Lesson_1.png)
+
+# Как обнаружить уязвимости SQL-инъекций? (Detecting SQL Injection)
+
+
+

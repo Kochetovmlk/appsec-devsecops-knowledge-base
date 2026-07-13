@@ -64,3 +64,25 @@ SQL Injection can be used in different ways depending on the attack goal and app
 - **Blind SQL Injection** — occurs when the application does not directly return query results, but information can be inferred by analyzing application behavior (such as response differences or execution time).
 
 Each type of SQL Injection requires a different approach for detection and exploitation.
+
+After studying the fundamentals of SQL Injection, we will move on to one of the most common exploitation techniques — **UNION-based SQL Injection**.
+
+This type of attack allows an attacker to use a vulnerable SQL query to retrieve data from other database tables. To perform a successful attack, it is necessary to understand the structure of the original query and construct a valid UNION query.
+
+> [!NOTE]
+> **UNION-based SQL Injection**
+
+## What is a UNION Attack
+
+UNION-based SQL Injection is a SQL Injection technique where the `UNION` operator is used to combine the results of the original SQL query with the results of an additional query.
+
+If an application returns SQL query results in its response, an attacker can use `UNION` to retrieve data from other database tables.
+
+Example:
+
+```sql
+SELECT a, b FROM table1 
+UNION 
+SELECT c, d FROM table2;
+
+

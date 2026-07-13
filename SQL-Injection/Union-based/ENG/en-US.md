@@ -53,3 +53,14 @@ Common locations where SQL Injection can occur:
 - **ORDER BY** — vulnerabilities can appear when controlling result sorting.
 
 Remember: SQL Injection is not related to a specific SQL statement type, but rather to improper handling of user-controlled input.
+
+## SQL Injection Examples
+
+SQL Injection can be used in different ways depending on the attack goal and application behavior. Common SQL Injection techniques include:
+
+- **Retrieving hidden data** — modifying SQL queries to access information that should not be visible to users.
+- **Bypassing application logic** — changing query conditions to bypass restrictions or alter application behavior.
+- **UNION attacks** — using the `UNION` operator to combine query results and retrieve data from other database tables.
+- **Blind SQL Injection** — occurs when the application does not directly return query results, but information can be inferred by analyzing application behavior (such as response differences or execution time).
+
+Each type of SQL Injection requires a different approach for detection and exploitation.

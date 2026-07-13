@@ -54,3 +54,12 @@
 ' UNION SELECT NULL,NULL,NULL--
 ```
 
+В лабораторной работе удачный запрос:
+
+```sql
+'+UNION+SELECT+NULL,NULL,NULL--
+```
+
+![PortSwigger](../Drawing/Drawing_4.png)
+
+На скриншоте видно, что количество столбцов равняется трём.✅

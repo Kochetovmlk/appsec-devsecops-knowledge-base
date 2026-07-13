@@ -88,4 +88,4 @@ SELECT c, d FROM table2;
 
 ## References
 
-- PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки
+- [PortSwigger Web Security Academy — SQL-инъекции, UNION-атаки](https://portswigger.net/web-security/sql-injection/union-attacks?utm_source=chatgpt.com)

@@ -17,3 +17,6 @@ Vulnerability parametr - tracking cookie
 2) Войти в качестве администратора на сервер.
 
 Аналитика: 
+Если Cookie: TrackingId есть и session существует, то мы видим `Welcome Back!`
+
+![PortSwigger](../Drawing/Drawing_12.png)

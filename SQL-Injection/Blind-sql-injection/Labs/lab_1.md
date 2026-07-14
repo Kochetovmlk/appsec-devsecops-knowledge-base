@@ -20,3 +20,12 @@ Vulnerability parametr - tracking cookie
 Если Cookie: TrackingId есть и session существует, то мы видим `Welcome Back!`
 
 ![PortSwigger](../Drawing/Drawing_12.png)
+
+Для того, чтобы понять, что уязвимость есть, необходимо протестировать, что будет при подаче ложного запроса, то есть нам нужно увидеть различие в поведении в зависимости от истинного или ложного вопроса.
+
+sql```
+Cookie: TrackingId=3wTxErmW7fI7fcZM' and 1=0--;
+```
+
+![PortSwigger](../Drawing/Drawing_13.png)
+

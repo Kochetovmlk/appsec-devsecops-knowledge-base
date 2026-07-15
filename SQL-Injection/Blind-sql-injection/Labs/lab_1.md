@@ -50,3 +50,11 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 Соответсвенно, на 20-ом у нас код ответа изменился, следовательно длина пароля равна 20.
 
 Это можно было посмотреть и вручную, меняя руками число для сравнения, а различие в поведении можно было обнаружить в месте, где сообщение `Welcome Back!` не обнаруживается в коде страницы.
+
+После того, как мы обнаружили длину пароля, переходим к Brutforce пароля:
+
+```sql
+Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a'--
+```
+
+

@@ -62,7 +62,7 @@ Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM us
 
 ![PortSwigger](../Drawing/Drawing_19.png)
 
-Выбираем 'Cluster bomb attack![PortSwigger](../Drawing/Drawing_19.png)
+Выбираем `Cluster bomb attack!` 
 
 ![PortSwigger](../Drawing/Drawing_20.png)
 
@@ -84,10 +84,10 @@ Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM us
 
 Вводим логин и пароль:
 
-![PortSwigger](../Drawing/Drawing_23.png)
+![PortSwigger](../Drawing/Drawing_24.png)
 
 Результат:
 
-![PortSwigger](../Drawing/Drawing_24.png)
+![PortSwigger](../Drawing/Drawing_23.png)
 
 Успех!✅

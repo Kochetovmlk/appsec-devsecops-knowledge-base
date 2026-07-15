@@ -43,4 +43,6 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 
 ![PortSwigger](../Drawing/Drawing_17.png)
 
+Далее смотрим на результат брутфорса и ищем первое различие кода
+
 ![PortSwigger](../Drawing/Drawing_18.png)

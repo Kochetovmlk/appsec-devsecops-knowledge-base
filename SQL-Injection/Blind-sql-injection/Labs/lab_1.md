@@ -76,4 +76,8 @@ Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM us
 
 Начинается брутфорс, логика та же, там где код ответа отличается, записываем символ:
 
+![PortSwigger](../Drawing/Drawing_14.png)
 
+У нас получается что-то наподобие этого:
+
+![PortSwigger](../Drawing/Drawing_15.png)

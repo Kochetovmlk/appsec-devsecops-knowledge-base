@@ -40,3 +40,5 @@ AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1
 ![PortSwigger](../Drawing/Drawing_16.png)
 
 ![PortSwigger](../Drawing/Drawing_17.png)
+
+![PortSwigger](../Drawing/Drawing_18.png)

@@ -81,3 +81,6 @@ Cookie: TrackingId=4B50SuDbzQLs2Z2P' AND (SELECT SUBSTRING(password,1,1) FROM us
 У нас получается что-то наподобие этого:
 
 ![PortSwigger](../Drawing/Drawing_15.png)
+
+Вводим логин и пароль:
+

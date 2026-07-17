@@ -109,4 +109,4 @@ Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0
 
 ![PortSwigger](../Drawing/Drawing_28.png)
 
-Успех!
+Успех!✅

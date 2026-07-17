@@ -16,3 +16,9 @@
 CAST - функция приведения типов, позволяет преобразовать один тип данных в другой.
 
 Делаем запрос:
+
+```sql
+Cookie: TrackingId=smGr2plBdKc0Xtm8' AND CAST((SELECT 1) AS int)--
+```
+
+![PortSwigger](../Drawing/Drawing_30.png)

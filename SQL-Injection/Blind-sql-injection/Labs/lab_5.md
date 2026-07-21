@@ -50,3 +50,12 @@ Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrat
 Для того, чтобы у нас не было множество ложных ответов = 5 секундам.
 
 ![PortSwigger](../Drawing/Drawing_37.png)
+
+Получается что-то такое:
+
+![PortSwigger](../Drawing/Drawing_39.png)
+
+Пытаемся авторизоваться:
+
+
+![PortSwigger](../Drawing/Drawing_38.png)

@@ -26,4 +26,6 @@
 
 После фаззинга будет было обнаружено, что используемая БД - **PostgreSQL**:
 
+```sql
 Cookie: TrackingId=5dgWsr328xGXDDnZ' || (SELECT pg_sleep(10))--'
+```

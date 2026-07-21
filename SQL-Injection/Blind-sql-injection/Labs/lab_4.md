@@ -24,8 +24,10 @@
 **MySQL**	`SELECT SLEEP(10)`
 
 
-После фаззинга будет было обнаружено, что используемая БД - **PostgreSQL**:
+После фаззинга было обнаружено, что используемая БД - **PostgreSQL**:
 
 ```sql
 Cookie: TrackingId=5dgWsr328xGXDDnZ' || (SELECT pg_sleep(10))--'
 ```
+
+

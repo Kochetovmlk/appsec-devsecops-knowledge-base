@@ -36,8 +36,12 @@ baseball
 ```sql
 username=app&password=123456
 ```
+Перебор паролей:
 
 ![PortSwigger](../Drawing/Drawing_3.png)
 
+Перебор пользователей:
+
 ![PortSwigger](../Drawing/Drawing_2.png)
+
 

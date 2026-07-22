@@ -40,8 +40,15 @@ username=app&password=123456
 
 ![PortSwigger](../Drawing/Drawing_3.png)
 
+![PortSwigger](../Drawing/Drawing_5.png)
+
 Перебор пользователей:
 
 ![PortSwigger](../Drawing/Drawing_2.png)
 
+Попытка авторизации:
+
+![PortSwigger](../Drawing/Drawing_4.png)
+
+Успех!
 

@@ -2,9 +2,9 @@
 
 В этой лабораторной работе уязвимость заключается в переборе имен пользователей с использованием времени отклика. Для решения задачи необходимо перебрать допустимое имя пользователя, подобрать пароль этого пользователя методом перебора, а затем получить доступ к странице его учетной записи.
 
-Ваши учетные данные:wiener:peter
+Ваши учетные данные: `wiener:peter`
 
 [Имена пользователей кандидатов](https://portswigger.net/web-security/authentication/auth-lab-usernames)
 
-[Пароли кандидатов](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+[Пароли кандидатов](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 

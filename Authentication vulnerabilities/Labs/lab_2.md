@@ -15,3 +15,11 @@
 ![PortSwigger](../Drawing/Drawing_6.png)
 
 Это нам особо ничего не дало, попробуем проявить смекалку, проанализируем ответ `Invalid username or password.`
+
+Так как у меня непрофессиональная версия Burp Suite, приходится ручками в фильтре искать:
+
+![PortSwigger](../Drawing/Drawing_7.png)
+
+Нашли аномальный ответ, в котором нет точки: `Invalid username or password`, можем сделать вывод, что при разработке была допущена ошибка в рамках которой при совпадении имени пользователя, ответ был без точки... `Invalid username or password`. Попытаемся это проверить:
+
+![PortSwigger](../Drawing/Drawing_8.png)

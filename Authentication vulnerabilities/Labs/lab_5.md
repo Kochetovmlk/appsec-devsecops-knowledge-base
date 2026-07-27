@@ -7,7 +7,7 @@
 [Пароли кандидатов](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 Ход работы:
- `X-Forwarded-For: 3`
+ 
  Попытаемся понять, есть ли блокировка пользователя? Захожу с учетными данными, которые не существуют, блокировок не вижу:
 
 ![PortSwigger](../Drawing/Drawing_19.png)

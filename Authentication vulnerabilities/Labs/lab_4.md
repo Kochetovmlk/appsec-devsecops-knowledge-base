@@ -9,3 +9,8 @@
 [Пароли кандидатов](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 
+Ход работы:
+
+Начинаем анализировать и при повторных неверных попытках авторизации видим ограниечние:
+
+

@@ -14,4 +14,4 @@
 
 ![PortSwigger](../Drawing/Drawing_6.png)
 
-Это нам особо ничего не дало, попробуем проявить смекалку, проанализируем ответ Invalid username or password.
+Это нам особо ничего не дало, попробуем проявить смекалку, проанализируем ответ ```sql Invalid username or password.```

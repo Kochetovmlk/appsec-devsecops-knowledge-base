@@ -17,3 +17,9 @@
 
 ![PortSwigger](../Drawing/Drawing_28.png)
 
+Видим: `wiener:51dc30ddc473d43a6011e9ebba6ca770` наш логин и возможно захеширован пароль, пытаюсь понять:
+
+![PortSwigger](../Drawing/Drawing_29.png)
+
+Верно, используется протокол MD5.
+

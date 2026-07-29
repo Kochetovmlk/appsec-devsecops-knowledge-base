@@ -33,6 +33,8 @@ BruteForce завершен, находим код 200.
 
 Пытаемся авторизоваться.
 
+![PortSwigger](../Drawing/Drawing_31.png)
+
 Успех!
 
 

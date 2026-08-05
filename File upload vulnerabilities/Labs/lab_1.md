@@ -7,8 +7,12 @@
 Вы можете войти в свою учетную запись, используя следующие учетные данные: `wiener:peter`
 
 
+Ход работы:
+
+Загружаем аватарку на странице:
+
+![PortSwigger](../Drawing/Drawing_17.png)
+
+![PortSwigger](../Drawing/Drawing_18.png)
 
 
-
-
-![PortSwigger](../Drawing/Drawing_1.png)

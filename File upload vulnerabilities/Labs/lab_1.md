@@ -21,4 +21,24 @@
 
 Ошибок не произошло, следовательно можно сделать вывод, что методы защиты отсутствуют...
 
-К сожалению у меня не приходит GET запрос для просмотра изображения, как раз-таки в нем мы меняем имя на myexploit и видим пароли... 
+Далее необходимо получить доступ к GET запросу на получение изображения:
+
+![PortSwigger](../Drawing/Drawing_20.png)
+
+Находим и отправляем в Repeater
+
+![PortSwigger](../Drawing/Drawing_21.png)
+
+В POST-запросе мы меняем содержимое изображения на исполняемый файл: `filename="myexploit.php"` с инструкцией: `<?php echo file_get_contents('/home/carlos/secret'); ?>`, которая показывает секрет карлоса...
+
+Далее в GET-запросе мы меняем 
+
+`GET /files/avatars/dog.jpg HTTP/2` на `GET /files/avatars/myexploit.php HTTP/2` и отправляем на проверку:
+
+![PortSwigger](../Drawing/Drawing_22.png)
+
+И получаем секрет, после чего проверяем его:
+
+![PortSwigger](../Drawing/Drawing_23.png)
+
+Успех!
